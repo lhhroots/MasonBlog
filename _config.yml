@@ -105,8 +105,8 @@ deploy:
 
 baidu_url_submit:
   count: 100
-  host: www.lihanghang.top
-  token: '' # 请通过环境变量或私有配置注入
+  host: lihanghang.top
+  token: '' # 去 https://ziyuan.baidu.com/ 注册获取 token
   path: baidu_urls.txt
 
 nofollow:
