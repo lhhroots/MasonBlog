@@ -2,6 +2,11 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "build": "node tools/copy-album-images.js && npx hexo generate",
+    "server": "node tools/copy-album-images.js && npx hexo server",
+    "deploy": "node tools/copy-album-images.js && npx hexo generate && npx hexo deploy"
+  },
   "hexo": {
     "version": "8.1.2"
   },

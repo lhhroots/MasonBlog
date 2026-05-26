@@ -10,7 +10,11 @@ themes/next/
 themes/freemind/
 themes/hiero/
 themes/source/
-themes/*/source/assets/fonts/
 myblog/
+source/albums/0/
+source/albums/1/
+source/albums/2/
+themes/*/source/assets/fonts/
+.deploy*/
 *.swp
 *.swo
