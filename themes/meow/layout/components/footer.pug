@@ -1,0 +1,58 @@
+.footer
+  #footer-copyright
+    - let start_date = date(new Date(theme.info.start_date), "YYYY")
+    - let cr_year = "© " + start_date
+    if date(Date.now(), "YYYY") !== start_date
+      - cr_year = cr_year + " - " + date(Date.now(), "YYYY")
+
+    if theme.footer.icon
+      - cr_year = cr_year + " <span>" + theme.footer.icon + "</span> "
+    
+    | !{cr_year}
+    a(href=url_for(theme.footer.author_link))= config.author || "MEOW Team"
+  
+  #footer-row
+    #footer-info
+      //- Please keep the copyright information of this theme in the footer to support Meow and the author. Thank you very much!
+      //- 请保留footer中的Meow主题版权信息，尊重创作与支持作者，谢谢！
+      #footer-framework
+        | !{_p('footer.framework', '<a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/chanwj/hexo-theme-meow" title="3.3.2" target="_blank">Meow</a>')}
+
+      if theme.footer.runtime
+        #footer-runtime
+          span#runtime(data-startdate=new Date(theme.info.start_date))= __('footer.runtime')
+    
+    if theme.page_view.enable
+      #footer-pageview
+        if theme.page_view.site_pv
+          span#busuanzi_container_site_pv
+            span= __('page_view.site_pv')
+            span#busuanzi_value_site_pv
+        
+        if theme.page_view.site_uv
+          span#busuanzi_container_site_uv
+            span= __('page_view.site_uv')
+            span#busuanzi_value_site_uv
+
+  if theme.footer.statistic
+    #footer-statistic
+      -
+        let total_wordcount = 0;
+        try {
+          site.posts.forEach(function(post) {
+            total_wordcount += post._content ? post._content.length : 0;
+          });
+          if (total_wordcount > 999999) {
+            total_wordcount = (total_wordcount / 10000).toFixed(1) + 'm';
+          } else if (total_wordcount > 999) {
+            total_wordcount = (total_wordcount / 1000).toFixed(1) + 'k';
+          }
+        } catch (e) {
+          total_wordcount = "?";
+          console.error("Failed to get wordcount!");
+        }
+      span= _p('footer.site_statistic', site.posts.length, total_wordcount)
+  
+  if theme.footer.register_info.enable
+    #footer-register
+      a(href= theme.footer.register_info.query_url target="_blank")= theme.footer.register_info.record_info

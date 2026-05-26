@@ -5,6 +5,11 @@ db.json
 node_modules/
 public/
 .deploy*/
-themes/*/source/
+themes/landscape/
+themes/next/
+themes/freemind/
+themes/hiero/
+themes/source/
+myblog/
 *.swp
 *.swo

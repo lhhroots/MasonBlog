@@ -1,0 +1,51 @@
+footer
+  width: 100%
+  height: auto
+  min-height: 6rem
+  background-color: var(--background-color-transparent-1)
+  backdrop-filter: blur(1px)
+  border-top: 1px solid var(--background-color-transparent-1)
+  user-select: none
+
+.footer
+  width: 100%
+  max-width: 720px
+  margin: 0 auto
+  padding: 1.5rem 1rem
+  color: var(--font-color-light-1)
+  text-align: center
+  line-height: 1.8rem
+  a
+    color: var(--font-color-light-1)
+    position: relative
+    padding: 0 .1rem
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -1px
+      display: block
+      height: 2px
+      width: 0
+      background-color: var(--theme-color-light-2)
+      transition: width .5s ease
+    &:hover
+      color: var(--theme-color)
+      &:after
+        width: 100%
+
+#footer-row
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  gap: 1rem 2rem
+  padding: .25rem 0
+
+#footer-info
+  text-align: center
+
+#footer-pageview
+  text-align: center
+
+#footer-statistic
+  padding: .25rem 0

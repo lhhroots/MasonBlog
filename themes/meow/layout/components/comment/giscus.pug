@@ -1,0 +1,16 @@
+if theme.comment.giscus
+  - const g = theme.comment.giscus
+  script(src='https://giscus.app/client.js'
+    data-repo=g.repo
+    data-repo-id=g.repo_id
+    data-category=g.category
+    data-category-id=g.category_id
+    data-mapping=g.mapping || 'pathname'
+    data-strict='0'
+    data-reactions-enabled=g.reactions ? '1' : '0'
+    data-emit-metadata='0'
+    data-input-position=g.input_position || 'bottom'
+    data-theme=g.theme || 'preferred_color_scheme'
+    data-lang=g.lang || 'zh-CN'
+    crossorigin='anonymous'
+    async)
