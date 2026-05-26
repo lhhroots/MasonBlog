@@ -1,0 +1,72 @@
+albums_list:
+  - name: 北京展览馆
+    cover: /albums/0/复兴号.jpeg
+    span: 2
+    column: 4
+    images:
+      - /albums/0/1号.jpeg
+      - /albums/0/10周年.jpeg
+      - /albums/0/103.jpeg
+      - /albums/0/211.jpeg
+      - /albums/0/3G.jpeg
+      - /albums/0/4G.jpeg
+      - /albums/0/77高考.jpeg
+      - /albums/0/973.jpeg
+      - /albums/0/98抗洪.jpeg
+      - /albums/0/985.jpeg
+      - /albums/0/WTO.jpeg
+      - /albums/0/WTO1.jpeg
+      - /albums/0/www.jpeg
+      - /albums/0/边界.jpeg
+      - /albums/0/变迁.jpeg
+      - /albums/0/奔月.jpeg
+      - /albums/0/出舱.jpeg
+      - /albums/0/大开发.jpeg
+      - /albums/0/电话.jpeg
+      - /albums/0/非典.jpeg
+      - /albums/0/复兴号.jpeg
+      - /albums/0/工程院.jpeg
+      - /albums/0/骨干网.jpeg
+      - /albums/0/关怀.jpeg
+      - /albums/0/计算机1.jpeg
+      - /albums/0/跨海.jpeg
+      - /albums/0/粮票.jpeg
+      - /albums/0/澳门.jpeg
+      - /albums/0/气场.jpeg
+      - /albums/0/亲吻.jpeg
+      - /albums/0/社保.jpeg
+      - /albums/0/神舟.jpeg
+      - /albums/0/时光.jpeg
+      - /albums/0/释放.jpeg
+      - /albums/0/誓词.jpeg
+      - /albums/0/文化.jpeg
+      - /albums/0/我党.jpeg
+      - /albums/0/无人车.jpeg
+      - /albums/0/西站.jpeg
+      - /albums/0/香港.jpeg
+      - /albums/0/医疗.jpeg
+      - /albums/0/院士.jpeg
+      - /albums/0/政策.jpeg
+      - /albums/0/重庆.jpeg
+      - /albums/0/最高奖.jpeg
+
+  - name: 风景独好
+    cover: /albums/1/1.jpg
+    span: 1
+    column: 3
+    images:
+      - /albums/1/1.jpg
+      - /albums/1/2.jpg
+      - /albums/1/3.jpg
+      - /albums/1/4.jpg
+
+  - name: 生活印记
+    cover: /albums/2/琳.jpg
+    span: 1
+    column: 3
+    images:
+      - /albums/2/琳.jpg
+      - /albums/2/改变.jpg
+      - /albums/2/改变1.jpg
+      - /albums/2/bjzlg.jpg
+      - /albums/2/first_step.png
