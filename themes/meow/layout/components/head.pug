@@ -6,6 +6,8 @@ meta(name="copyright" content=config.author || "MEOW Team")
 meta(name="theme-color" content=theme.color.light.theme_color || theme.color.dark.theme_color || "#FFB347")
 meta(name ="format-detection" content="telephone=no")
 
+script(async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8154279385315713" crossorigin="anonymous")
+
 - var page_keywords = ""
 if page.tags && page.tags.length > 0
   - page_keywords = page.tags.data.map(function(tag) {return tag.name;}).join(',')
