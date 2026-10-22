@@ -152,6 +152,27 @@ header
   .icon
     height: 1.25rem
 
+#rss-btn
+  a
+    display: flex
+    align-items: center
+    gap: .35rem
+    padding: .35rem .7rem
+    border-radius: 999px
+    border: 1px solid var(--theme-color-dark-1)
+    background: var(--theme-color)
+    color: #2d2d2d
+    font-size: .95rem
+    font-weight: 600
+    white-space: nowrap
+    transition: transform .2s ease, box-shadow .2s ease
+    &:hover
+      color: #2d2d2d
+      transform: translateY(-1px)
+      box-shadow: 0 2px 8px #0002
+  .icon
+    height: 1.1rem
+
 #search-btn
   span
     background-color: var(--background-color-grey-transparent)

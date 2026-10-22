@@ -35,6 +35,11 @@ header
                       span= __(subtitle)
 
     #nav-function
+      #rss-btn
+        a.rss-subscribe(href=url_for('rss.xml') title='RSS 订阅' aria-label='RSS 订阅')
+          != getSvg('brand-rss')
+          span RSS 订阅
+
       if theme.search.enable
         #search-btn
           a(href='javascript:void(0);' title=__('search') accesskey='s')
