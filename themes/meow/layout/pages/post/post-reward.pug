@@ -22,4 +22,5 @@
 
     if theme.post.reward.reward_list.enable
       .post-reward-list
-        a(href=url_for(theme.post.reward.reward_list.link) target='_blank')= __('reward_list')
+        if theme.post.reward.reward_list.link
+          a(href=url_for(theme.post.reward.reward_list.link) target='_blank' rel='noopener')= __('reward_list')

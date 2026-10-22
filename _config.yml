@@ -138,8 +138,12 @@ baidusitemap:
 # RSS Feed
 feed:
   enable: true
-  type: atom
-  path: atom.xml
+  type:
+    - atom
+    - rss2
+  path:
+    - atom.xml
+    - rss.xml
   limit: 20
   hub:
   content: true
@@ -147,5 +151,4 @@ feed:
   order_by: -date
   icon: /images/logo.jpeg
   autodiscovery: true
-
 

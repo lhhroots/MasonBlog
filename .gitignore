@@ -11,9 +11,12 @@ themes/freemind/
 themes/hiero/
 themes/source/
 myblog/
-source/albums/0/
-source/albums/1/
-source/albums/2/
+source/albums/0/*
+!source/albums/0/index.md
+source/albums/1/*
+!source/albums/1/index.md
+source/albums/2/*
+!source/albums/2/index.md
 themes/*/source/assets/fonts/
 .deploy*/
 *.swp

@@ -41,7 +41,7 @@ global:
 
 # Font Customization
 font:
-  custom: true # Whether to use custom font
+  custom: false # Local custom font files are not included in this site
   default_font_link: assets/fonts/vivoSans-Regular/result.css # Url of default font
   default_font_family: "'vivo Sans', 'PingFang SC', 'Microsoft YaHei', Sans-serif, Serif" # Define default fonts
   title_font_link: # Url of title font

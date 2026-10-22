@@ -18,6 +18,11 @@
       #footer-framework
         | !{_p('footer.framework', '<a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/chanwj/hexo-theme-meow" title="3.3.2" target="_blank">Meow</a>')}
 
+      #footer-feed
+        a(href=url_for('rss.xml') title='RSS 订阅')
+          != getSvg('brand-rss')
+          | RSS 订阅
+
       if theme.footer.runtime
         #footer-runtime
           span#runtime(data-startdate=new Date(theme.info.start_date))= __('footer.runtime')

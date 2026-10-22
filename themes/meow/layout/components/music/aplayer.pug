@@ -10,11 +10,11 @@ if theme.music.enable
     //- != importJS('meting','2','dist/Meting.min.js')
     - meting_api = `${api}?server=${server}&type=${type}&id=${id}&r=${Math.random()}`
   else
-    - musicList = site.data.music
+    - musicList = site.data.music || []
 
   script.
     const initAplayer = (data) => {
-      if (!data.length) return;
+      if (!Array.isArray(data) || data.length === 0) return;
 
       const ap = new APlayer({
         container: document.getElementById('music-player'),
@@ -45,5 +45,5 @@ if theme.music.enable
     if ('!{meting_api}') {
       document.addEventListener("DOMContentLoaded", fetchData);
     } else {
-      document.addEventListener("DOMContentLoaded", initAplayer(!{JSON.stringify(musicList)}));;
+      document.addEventListener("DOMContentLoaded", () => initAplayer(!{JSON.stringify(musicList)}));
     }

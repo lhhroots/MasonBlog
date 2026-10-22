@@ -2,7 +2,13 @@ aside#home-sidebar
   if theme.sidebar.info.enable
     .sidebar-card#sidebar-info
       #sidebar-info-img
-        a(href=url_for(theme.sidebar.info.link))
+        if theme.sidebar.info.link
+          a(href=url_for(theme.sidebar.info.link))
+            if theme.sidebar.info.type == "author"
+              img(src=url_for(theme.info.avatar) alt='Avatar')
+            else if theme.sidebar.info.type == "site"
+              img(src=url_for(theme.info.logo) alt='Avatar')
+        else
           if theme.sidebar.info.type == "author"
             img(src=url_for(theme.info.avatar) alt='Avatar')
           else if theme.sidebar.info.type == "site"
